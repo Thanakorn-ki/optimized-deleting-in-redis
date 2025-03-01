@@ -1,0 +1,10 @@
+apiVersion: 1
+
+providers:
+  - name: "Redis Dashboards"
+    folder: "Redis"  # This will appear as a folder in Grafana UI
+    type: "file"
+    options:
+      path: "/var/lib/grafana/dashboards"
+    disableDeletion: false
+    updateIntervalSeconds: 10  # Check for updates every 10 seconds
